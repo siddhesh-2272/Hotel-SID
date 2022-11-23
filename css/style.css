@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*reset all*/
+
+}
+
+/* main styling */
+html,body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.7em;}
+a{
+    color: #333;/*cant put all future a tag are became white so we can put white in class a white*/
+    text-decoration: none;
+}
+h1,h2,h3{
+    padding-bottom: 20px;
+}
+p{
+    margin: 10px 0;
+}
+/*for not to touch to right or to left*/
+.container{
+    margin:auto ;
+    /* max-width: 1100px; */
+    overflow: auto;
+    padding: 0 50px;
+}
+.primary-text{
+  color: rgb(60, 227, 216);
+}
+.abtn{
+  display: inline-block;
+  font-size: 20px;font-weight: bolder;
+  color:rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+  padding: 15px 15px;border: white;cursor: grab;
+  
+}
+
+.abtn:hover{
+  background:  rgb(0, 255, 238);
+
+  color: #333;
+  
+}
+.bg-primary{
+  color: rgb(0, 0, 0);
+  background: rgb(126, 227, 243);
+}
+.bg-light{
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+.clr{
+  clear: both;
+}  /*for clearing or seperating boxex from footer*/
+.l-heading{
+  font-size: 40px;
+}
+
+
+/*padding defines*/
+.py1{padding: 10px 0;}
+.py2{padding: 20px 0;}
+.py3{padding: 30px 0;}
+
+
+/* /*code for idnavbar */
+#navbar{
+    background-color: black;
+    color: antiquewhite;
+    overflow:  auto;
+}
+
+#navbar .veg {
+  padding-top : 10px;
+}
+#navbar a{
+    color: antiquewhite; /*only acsess a tag ie links from nvbar tag*/
+
+}
+/*only acsess h1 tag ie links from nvbar tag left psh*/
+#navbar h1{
+  float: left;
+  padding-top: 20px;
+
+}
+#navbar ul{
+  float: right;
+  /*remove circles*/
+  list-style: none;
+  
+
+}
+/*horizontal showing flot to left*/
+#navbar ul li {
+  float: left;
+  /*remove circles*/}
+  #navbar ul li a {
+  display: block; /*seperate padding beacuase all future list will paddeled*/
+  padding: 20px;
+  text-align: center;
+
+}
+
+  #navbar ul li a:hover  , 
+  #navbar ul li a.current {
+ /*feel on clk*/
+ background: rgb(83, 82, 81);
+ color:rgb(60, 227, 216);
+
+
+}
+
+/* //showcse desining */
+#showcase{
+  background: url('../img/showcase.jpg') no-repeat center center/cover;
+  height: 600px;
+}
+#showcase .showcase-content {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-align: center;
+  padding-top: 170px;
+}
+#showcase .showcase-content .primary-text {
+  color: rgb(92, 216, 228);
+  
+  text-align: center;
+  padding-top: 170px;
+}
+.showcase-content h1{
+  color: rgb(255, 255, 255);
+}
+
+.showcase-content p{
+ padding-bottom: 40px;
+ line-height: 1.7em;
+}
+
+/*boxes*/
+.box{
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+
+
+}
+.box{
+  margin-bottom: 10px;
+
+}
+
+
+
+/*about design*/
+
+#about-info .info-right{
+  float: right;
+  width: 50%;
+  min-height: 100%;
+
+
+}
+
+#about-info .info-left{
+  float: left;
+  width: 50%;
+  min-height: 100%;
+
+
+}
+#about-info .info-left img{
+  display: block;
+  margin: auto;
+  width: 90%;
+  border-radius: 20%;
+}
+
+/*feedback*/
+#tests{
+  height: 600px;
+  background: url('../img/test.jpg') no-repeat center center/cover;
+  padding-top: 100px;
+
+}
+
+
+#tests .l-heading{
+  color:rgb(4, 6, 6);
+  text-align: center;
+padding-bottom: 40px;
+ 
+
+}
+#tests .test {
+padding: 20px; 
+margin-bottom: 40px;
+opacity: .8;
+
+}
+
+#tests .test img{
+  width: 70px;
+ float: left;
+ margin-right: 20px;
+  border-radius: 10%;
+
+}
+
+/* Contact */
+.btn1{
+  background-color: rgb(60, 227, 216);
+  border: none;
+  color: rgb(23, 22, 22);
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#contact {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#contact .form {
+  margin-bottom: 10px;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+  /* width: 100%; */
+  padding: 10px;
+  border: 1px solid;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color:rgb(60, 227, 216);
+}
+
+/* Contact Info */
+
+#contact-info {
+  height: 200px;
+  background:rgb(60, 227, 216);
+}
+
+#contact-info .box {
+  float: right;
+  width: 33.3%;
+  height: 100%;
+  text-align: center;
+  padding: 30px 30px;
+  overflow: hidden;
+}
+
+#contact-info .box p {
+  color: rgb(0, 0, 0);
+}
+
+#contact-info .swimming {
+  color: #21E1E1;
+}
+
+#contact-info #mid p {
+  color: rgb(15, 14, 14);
+}
+
+
+/*footer style*/
+#mainftr
+{
+  text-align: center;
+  background: rgb(0, 0, 0);
+  color:rgb(110, 254, 244);
+
+  padding: 20px;
+  font-style: italic;
+
+}
